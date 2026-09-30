@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-950: #29070e;
+  --color-maroon-900: #3d0a14;
+  --color-maroon-850: #4a0d19;
+  --color-maroon-800: #570e1c;
+  --color-maroon-750: #661122;
+  --color-maroon-700: #761427;
+  --color-maroon-600: #8b1830;
+  --color-maroon-500: #a3223c;
+  --color-maroon-400: #c2435d;
+  --color-maroon-300: #dc768c;
+  --color-maroon-200: #f0afbf;
+  --color-maroon-100: #fae0e7;
+  --color-maroon-50: #fdf2f5;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #ffffff;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-duty-sheet, #printable-duty-sheet * {
+    visibility: visible;
+  }
+  #printable-duty-sheet {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  header, aside, button, nav {
+    display: none !important;
+  }
+}
+

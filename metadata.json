@@ -1,0 +1,6 @@
+{
+  "name": "invi",
+  "description": "Admin dashboard for managing college examination invigilation, halls, staff, and monitoring devices.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
